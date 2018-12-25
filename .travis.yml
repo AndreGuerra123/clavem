@@ -1,0 +1,23 @@
+language: python 
+
+    python: 
+
+      - "3.6"
+
+      - "3.7"
+    env: 
+
+      - DJANGO=2.1
+
+    install:
+
+      - pipenv install
+
+    before_script:
+
+      - python manage.py makemigrations
+      - python manage.py migrate
+
+    script:
+
+      - python manage.py test
