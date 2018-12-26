@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans 'Login' %}{% endblock title %}
+{% block content %}
+<div class="login-wrapper">
+    <div class="login-element">
+
+    </div>
+    <div>{% trans 'Or' %}</div>
+    <div class="login-element">
+        <a href="{% url "social:begin" "google-oauth2" %}">Google</a>
+        <a href="{% url "social:begin" "facebook" %}">Facebook</a>
+        <a href="{% url "social:begin" "twitter" %}">Twitter</a>
+    </div>
+</div>
+
+
+{% endblock content%}
+
+<style>
+login-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+login-element{
+
+}
+</style>

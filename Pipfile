@@ -5,9 +5,11 @@ name = "pypi"
 
 [packages]
 django = "*"
-"django-bootstrap4" = "*"
 gunicorn = "*"
 django-heroku = "*"
+pillow = "*"
+djangorestframework = "*"
+social-auth-app-django = "*"
 
 [dev-packages]
 
